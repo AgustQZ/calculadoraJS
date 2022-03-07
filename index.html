@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="calculadora" <form action="#" name="calculadora" id="calculadora">
+        <p id="textoPantalla">0</p>
+        <p>
+            <input type="button" class="largo" value="Retr" onclick="retro()" />
+            <input type="button" class="largo" value="CE" onclick="borradoParcial()" />
+            <input type="button" class="largo" value="C" onclick="borradoTotal()" />
+        </p>
+        <p>
+            <input type="button" value="7" onclick="numero('7')" />
+            <input type="button" value="8" onclick="numero('8')" />
+            <input type="button" value="9" onclick="numero('9')" />
+            <input type="button" value="/" onclick="operar('/')" />
+            <input type="button" value="Raiz" onclick="raizc()" />
+        </p>
+        <p>
+            <input type="button" value="4" onclick="numero('4')" />
+            <input type="button" value="5" onclick="numero('5')" />
+            <input type="button" value="6" onclick="numero('6')" />
+            <input type="button" value="*" onclick="operar('*')" />
+            <input type="button" value="%" onclick="porcent()" />
+        </p>
+        <p>
+            <input type="button" value="1" onclick="numero('1')" />
+            <input type="button" value="2" onclick="numero('2')" />
+            <input type="button" value="3" onclick="numero('3')" />
+            <input type="button" value="-" onclick="operar('-')" />
+            <input type="button" value="1/x" onclick="inve()" />
+        </p>
+        <p>
+            <input type="button" value="0" onclick="numero('0')" />
+            <input type="button" value="+/-" onclick="opuest()" />
+            <input type="button" value="." onclick="numero('.')" />
+            <input type="button" value="+" onclick="operar('+')" />
+            <input type="button" value="=" onclick="igualar()" />
+        </p>
+        </form>
+    </div>
+
+
+    <script src="logica.js"></script>
+</body>
+
+</html>
